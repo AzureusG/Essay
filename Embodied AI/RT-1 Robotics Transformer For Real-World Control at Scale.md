@@ -10,7 +10,7 @@
 
 * Steps: Images and Instructions Input -> EfficientNet-B3(ImageNet pre-trained) -> Token Learner -> Transformer
 
-* Model:  ==Instruction and Image Tokenization== (300*300(Input) -> 9\*9\*512(Final Convolutional Layer) -> 81 Vision Language Tokens) -> ==Token Learner==( -> 8 Final Tokens) -> ==Decoder-only Transformer== ( -> 48 total tokens with added position encoding) -> ==Action Tokenizer==( -> 7 variables with 256 bins)
+* Model:  <mark>Instruction and Image Tokenization</mark> (300*300(Input) -> 9\*9\*512(Final Convolutional Layer) -> 81 Vision Language Tokens) -> <mark>Token Learner</mark> ( -> 8 Final Tokens) -> <mark>Decoder-only Transformer</mark> ( -> 48 total tokens with added position encoding) -> <mark>Action Tokenizer</mark> ( -> 7 variables with 256 bins)
 * Loss: Cross Entropy and Casual Masking
 * Speeding: Reduce the number of tokens generated using token learner, compute the tokens only once
 
