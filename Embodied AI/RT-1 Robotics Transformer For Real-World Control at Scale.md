@@ -6,7 +6,7 @@
 * Challenges: assembling the right dataset(关联性，兼具规模和广度的数据集) and designing the right model(高容量高效)
 * Method: treats the mapping of language and vision observations to robot actions as a sequence modelling problem, using a Transformer to learn this mapping
 
-<img src="file:///C:/Users/葛畅/AppData/Roaming/Typora/typora-user-images/image-20250701232607430.png">
+![图片描述](RT-1.png)
 
 * Steps: Images and Instructions Input -> EfficientNet-B3(ImageNet pre-trained) -> Token Learner -> Transformer
 
